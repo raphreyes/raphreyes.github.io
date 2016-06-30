@@ -35,7 +35,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('have urls, and not empty', function() {
+        it('have urls, and url is not empty', function() {
             var numFeeds = allFeeds.length;
 
             for(var f = 0; f < numFeeds; f++) {
@@ -71,10 +71,19 @@ $(function() {
         
         it('is hidden by default, and has class menu-hidden', function() {
             var checkMenu = document.getElementsByTagName('body')[0].className;
-        
+            
+            // get transform value of slide-menu when hidden
+            var slideVal = $('.slide-menu').css('transform');
+            
+            // check the .menu-hidden class exists and .slide-menu exists
             expect(checkMenu).toBeDefined();
+            expect('.slide-menu').toBeDefined();
+            
             expect(checkMenu).toBe('menu-hidden');
             expect(checkMenu).not.toBe('');
+            
+            // check that slide-menu has 'hidden' transform values
+            expect(slideVal).toBe('matrix(1, 0, 0, 1, -192, 0)')
         });
         
          /* TODO: Write a test that ensures the menu changes
