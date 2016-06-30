@@ -1,6 +1,6 @@
-# Feed Tester Project
+# Feed Reader Testing Project
 
-This repository is for the Udacity Feed Reader Project. This code is hosted as a live web page at http://raphreyes.github.io/
+This repository is for the Udacity Feed Reader Testing Project. This code is hosted as a live web page at http://raphreyes.github.io/
 
 To inspect the code for this project simply "git clone" its repository from: https://github.com/raphreyes/raphreyes.github.io
 
