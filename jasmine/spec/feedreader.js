@@ -77,10 +77,9 @@ $(function() {
             
             // check the .menu-hidden class exists and .slide-menu exists
             expect(checkMenu).toBeDefined();
-            expect('.slide-menu').toBeDefined();
-            
             expect(checkMenu).toBe('menu-hidden');
             expect(checkMenu).not.toBe('');
+            expect('.slide-menu').toBeDefined();
             
             // check that slide-menu has 'hidden' transform values
             expect(slideVal).toBe('matrix(1, 0, 0, 1, -192, 0)')
@@ -147,7 +146,7 @@ $(function() {
         var feedContent = [];        
 
         beforeEach(function(done) {
-            // Load three of the feeds and push the result of first entry into array
+            // Load three of the feeds and push the result of first entry in each feed into array
             loadFeed(0, function(){
                 feedOne = $('.entry').html();
                 feedContent.push(feedOne);
