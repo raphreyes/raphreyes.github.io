@@ -3,6 +3,9 @@
 This repository is for the Udacity Feed Reader Testing Project. This code is hosted as a live web page at http://raphreyes.github.io/
 
 To inspect the code for this project simply "git clone" its repository from: https://github.com/raphreyes/raphreyes.github.io
+- Open the index.html file in your browser to run the feed reader page and Jasmine tests.
+- Jasmine test results can be Viewed at the bottom of the feed reader page.
+- Specs for the test can be viewed in the /jasmine/spec/feedreader.js file.
 
 ## Jasmine
 Jasmine 2.1.2 is used for this project. More information about Jasmine is here: http://jasmine.github.io/
