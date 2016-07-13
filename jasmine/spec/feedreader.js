@@ -12,7 +12,7 @@ $(function() {
 
     describe('RSS Feeds', function() {
         /* This is our first test - it tests to make sure that the
-         * allFeeds variable has been defined and that it is not
+         * allFeeds variable has been defined and that it is not 
          * empty.
          */
 
@@ -114,7 +114,7 @@ $(function() {
         });
 
         it('contain at least one entry', function() {
-            var hasEntries = document.getElementsByClassName('entry').length;
+            var hasEntries = $('.feed .entry').length;
             console.log('Number of feed entries is: ', hasEntries);
             expect(hasEntries).toBeGreaterThan(0);
         });
@@ -133,20 +133,17 @@ $(function() {
             loadFeed(1, function(){
                 var feedOne = $('.entry').html();
                 feedContent.push(feedOne);
-                console.log('Confirm push feed 1');
-                done();
-                console.log(feedContent[0]);
-            });
-        });
-
-        beforeEach(function(done) {
-            // 2nd feed - first entry of 2nd feed is pushed to our feedContent array.
-            loadFeed(2, function(){
-                var feedTwo = $('.entry').html();
-                feedContent.push(feedTwo);
-                console.log('Confirm push feed 2');
-                done();
-                console.log(feedContent[1]);
+                console.log('Confirm push feed 1: ' + feedContent[0]);
+                
+                // load the 2nd feed
+                loadFeed(2, function(){
+                        var feedTwo = $('.entry').html();
+                        feedContent.push(feedTwo);
+                        console.log('Confirm push feed 2: ' + feedContent[1]);
+                        
+                        // mark done
+                        done();
+                    });
             });
         });
 
@@ -162,6 +159,7 @@ $(function() {
             expect(secondFeed).not.toBe('');
 
             expect(firstFeed).not.toBe(secondFeed);
+            console.log('Compared ' + firstFeed + ' to ' + secondFeed);
         });
     });
 }());
