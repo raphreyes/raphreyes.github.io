@@ -1,1 +1,3 @@
-*komodo*
+*.komodoproject
+*.kpf
+*node_modules/

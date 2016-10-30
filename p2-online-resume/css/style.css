@@ -1,0 +1,267 @@
+body {
+    background: #E9E5E1;
+    font-size: 16px;
+}
+
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.clear-fix {
+    overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry,
+.contact-entry {
+    padding: 0 5%;
+}
+
+.contact-entry a {
+    display: inline-block;
+    color: #fff;
+}
+
+h1 {
+    font-size: 40px;
+    color: #b3b3b3;
+    line-height: 48px;
+    display: inline;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #b3b3b3;
+    line-height: 29px;
+    padding: 10px;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    line-height: 22px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    padding: 10px 5%;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.date-text {
+    font-style: italic;
+    color: #b3b3b3;
+    float: left;
+}
+
+.location-text {
+    font-style: italic;
+    color: #999;
+    float: right;
+}
+
+p {
+    line-height: 1.25em;
+}
+
+.welcome-message {
+    font-style: italic;
+    font-size: 18px;
+    color: #f3f3f3;
+    line-height: 1.5em;
+}
+
+.header-bg,
+.connect-bg {
+    background-color: #062831;
+    position: relative;
+    -moz-box-shadow: 0px 2px 20px #222;
+    -webkit-box-shadow: 0px 2px 20px #222;
+    box-shadow: 0px 2px 20px #222;
+}
+
+.border-bg {
+    background-color: #438176;
+    height: 2em;
+    -moz-box-shadow: 0px 2px 10px #555;
+    -webkit-box-shadow: 0px 2px 10px #555;
+    box-shadow: 0px 2px 10px #555;
+}
+
+.work-bg,
+.education-bg {
+    background-color: #FAFAFA;
+    -moz-box-shadow: 0px 2px 10px #555;
+    -webkit-box-shadow: 0px 2px 10px #555;
+    box-shadow: 0px 2px 10px #555;
+    position: relative;
+}
+
+.project-bg {
+    background-color: #edebee;
+}
+
+.lived-bg {
+    background-color: #b9dad4;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.title-text {
+    color: #1d2120;
+    margin-top: 2em;
+}
+
+.orange-text {
+    color: #e6874c;
+}
+
+.white-text {
+    color: #fdfdfd;
+}
+
+.med-text {
+    color: #788783;
+}
+
+.dark-text {
+    color: #1d2120;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.center-content {
+    padding: 2.5% 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 2;
+}
+
+.biopic {
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: none;
+}
+
+img {
+    padding: 10px;
+}
+
+span {
+    padding: 5px;
+}
+
+#lets-connect,
+#workExperience,
+#projects,
+#education {
+    padding: 1em 0 2em 0;
+}
+
+.infobox {
+    background-color: rgb(32, 58, 87);
+    color: #fff;
+    padding: 1em;
+    margin: 0;
+}
+
+.intlButton {
+    float: right;
+    border: 0;
+    background: #fff;
+    color: #222;
+    padding: .5em;
+    cursor: pointer;
+}
+
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+    #lets-connect {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 175px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #lets-connect {
+        margin-top: 10%;
+    }
+    .biopic {
+        width: 150px;
+    }
+    .welcome-message {
+        display: none;
+    }
+}
+
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
+}
+
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+    #skills-h3,
+    .biopic {
+        display: block;
+    }
+}

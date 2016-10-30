@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- This tells the browser how to read the document. -->
+    <meta charset="utf-8">
+
+    <!-- Tells the browser what the title of this page should be. -->
+    <title>Resume</title>
+
+    <!-- Load the page styles. -->
+    <link href="css/style.css" rel="stylesheet">
+    <script async type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div id="main">
+
+        <div id="header" class="header-bg center-content clear-fix">
+            <ul id="topContacts" class="flex-box"></ul>
+        </div>
+        
+        <div class="border-bg">
+        </div>
+        
+        <div class="clear-both"></div>
+        
+        
+        <div id="workExperience" class="work-bg">
+            <h2>Work Experience</h2>
+        </div>
+        
+        <div id="projects" class="project-bg">
+            <h2>Projects</h2>
+        </div>
+        
+        <div id="education" class="education-bg">
+            <h2 class="dark-text">Education</h2>
+        </div>
+        
+        <div id="mapDiv" class="lived-bg">
+            <h2 class="med-text">Where I've Lived and Worked</h2>
+        </div>
+        
+        <div id="lets-connect" class="connect-bg">
+            <h2 class="left-text">Let's Connect</h2>
+            <ul id="footerContacts" class="left-text contact-entry">
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
+	
+	<!-- Display the Data -->
+    <script src="js/resumeBuilder.js"></script>
+
+    <script type="text/javascript">
+    	// Black out all empty sections
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.backgroundColor = '#000';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.backgroundColor = '#000';
+        }
+    </script>
+</body>
+
+</html>

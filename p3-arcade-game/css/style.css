@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+	font-family: sans-serif;
+}
+canvas,
+.score {
+	display: block;
+	margin: auto;
+	background-color: #000;
+}
+
+.score {
+	width: 505px;
+	max-width: 505px;
+	padding-top: .5em;
+	height: 48px;
+	background-color: #000;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
