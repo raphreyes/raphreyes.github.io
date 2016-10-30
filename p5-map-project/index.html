@@ -1,43 +1,49 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-		<title>20 Amusement Parks of North America</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body onresize="mapControl.resize();">
-		<header class="row">
-			<div id="title" class="title">
-				<h1>20 Amusement Parks of North America</h1>
-			</div>
-		</header>
-		<aside id="control" class="control">
-			<div id="filter" class="filter">
-			   <div id="form" class="form flex">
-					<input type="text" class="input" id="input" data-bind="value: filter, valueUpdate: 'keyup'" onkeyup="mapControl.filter()">
-					<button id="frameAll" class="frame" onclick="mapControl.frameAll()">&nbsp;</button>
-					<button id="menubutton" class="menubutton" onclick="mapControl.menu()">&#9776;</button>
-				</div>
-				<div id="list" class="list">
-					<ul data-bind="foreach: filteredParks">
-						<li data-bind="click: $root.changePark"><div class="park" data-bind="text: name"></div><div class="city" data-bind="text: location"></div></li>
-					</ul>
-				</div>
-	        </div>
-		</aside>
-		<main id="main" class="main">
-			<div class="row">
-				<div id="apierror"></div>
-			</div>
-			<div id="map" class="map">
-			</div>
-			<div class="attrib">Additional location information supplied by Wikipedia.</div>
-		</main>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.3.0.js"></script>
-		<script src="js/model.js"></script>
-  		<script src="js/app.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?callback=mapControl.init" async defer onerror="mapControl.noLoad()"></script>
-    </body>
+
+<head>
+    <title>20 Amusement Parks of North America</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onresize="mapControl.resize();">
+    <header class="row">
+        <div id="title" class="title">
+            <h1>20 Amusement Parks of North America</h1>
+        </div>
+    </header>
+    <aside id="control" class="control">
+        <div id="filter" class="filter">
+            <div id="form" class="form flex">
+                <input type="text" class="input" id="input" data-bind="value: filter, valueUpdate: 'keyup'" onkeyup="mapControl.filter()">
+                <button id="frameAll" class="frame" onclick="mapControl.frameAll()">&nbsp;</button>
+                <button id="menubutton" class="menubutton" onclick="mapControl.menu()">&#9776;</button>
+            </div>
+            <div id="list" class="list">
+                <ul data-bind="foreach: filteredParks">
+                    <li data-bind="click: $root.changePark">
+                        <div class="park" data-bind="text: name"></div>
+                        <div class="city" data-bind="text: location"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main id="main" class="main">
+        <div class="row">
+            <div id="apierror"></div>
+        </div>
+        <div id="map" class="map">
+        </div>
+        <div class="attrib">Additional location information supplied by Wikipedia.</div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.3.0.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=mapControl.init" async defer onerror="mapControl.noLoad()"></script>
+</body>
+
 </html>
