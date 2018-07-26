@@ -18,12 +18,11 @@ var bio = {
         "JavaScript",
         "JQuery",
         "JSON",
-        "GIT/GIThub",
+        "GIT/GITHUB",
         "Python",
         "SQL",
         "Photoshop",
         "Wordpress",
-        "PHP",
         "3d Modeling / Rendering",
         "Non-Linear Video Editing"
     ]
@@ -58,10 +57,10 @@ var work = {
         "title": "Web Design, Marketing",
         "dates": "May 2015 - Current",
         "location": "Temecula, CA",
-        "desc": "Build and maintain company websites (consumer site, and trade portal site.) within Wordpress using HTML, CSS, Javascript.<br/>" +
-            "Migrate data from SalesForce and Quickbooks to SAP using Excel, and Access SQL.<br/>" +
-            "Create reports from SAP using SQL and Crystal.<br/>Assist in production of marketing materials using Photoshop.<br/>" +
-            "Integrate SAP data with website using Javascript/JSON<br/>"
+        "desc": "Build and maintain company websites (consumer site, and Dealer Accounts site.) within Wordpress using HTML, CSS, Javascript.<br/>" +
+            "Migrate data from SalesForce and Quickbooks to SAP using Excel, and Access / SQL.<br/>" +
+            "Create reports from SAP using SQL, Excel and Python.<br/>Process graphics using Photoshop.<br/>" +
+            "Integrate SAP data with website using Javascript / JSON<br/>Implement and maintain EDI system integration with SAP"
     }, {
         "name": "Lucky Money, Inc.",
         "title": "Web Design, Advertising",
