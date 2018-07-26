@@ -11,7 +11,7 @@ var bio = {
         "blog": "http://nonshape.com/blog",
         "location": "Fresno, CA"
     },
-    "message": "Welcome! This page was last updated in Summer of 2016.",
+    "message": "Welcome! This page was last updated July 2018.",
     "skills": [
         "HTML",
         "CSS",
@@ -62,6 +62,16 @@ var work = {
             "Create reports from SAP using SQL, Excel and Python.<br/>Process graphics using Photoshop.<br/>" +
             "Integrate SAP data with website using Javascript / JSON<br/>Implement and maintain EDI system integration with SAP"
     }, {
+        "name": "Ongoing Freelance Web Design",
+        "title": "Web Designer",
+        "dates": "Jan 2018 - June 2018",
+        "location": "Fresno, CA",
+        "desc": "Create a real estate website for a client which involved integration to call home listing data from MLS database.<br/>" +
+            "Designed website for a personal trainer. Website needed photo gallery and video playback as well as online registration.<br/>" +
+            "Maintenance and content update for a long time client's website to update images and course information.<br/>" +
+            "Fix domain resolution issues for a small business referred to me."
+    }, {
+        {
         "name": "Lucky Money, Inc.",
         "title": "Web Design, Advertising",
         "dates": "July 2012 - May 2015",
