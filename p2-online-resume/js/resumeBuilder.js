@@ -71,7 +71,6 @@ var work = {
             "Maintenance and content update for a long time client's website to update images and course information.<br/>" +
             "Fix domain resolution issues for a small business referred to me."
     }, {
-        {
         "name": "Lucky Money, Inc.",
         "title": "Web Design, Advertising",
         "dates": "July 2012 - May 2015",
