@@ -23,14 +23,21 @@
         </div>
     </header>
     <article>
+        <h2>The Assignment</h2>
+        <p>One assignment we recieved as part of the Udacity Front End Web Development course was to take a poorly optimized web page and improve the page performance.</p>
         <h2>How to compare versions</h2>
-        <p>The links below will open an optimized or if selected, an un-optimized version of a pizza website.</p>
-        <p>When comparing the websites, press the F12 key after the pizza site loads to bring up your browser's console. Be sure the Console data is being displayed, as opposed to Element or Network data.</p>
-        <p>While the console is displayed, scroll the website up and down, and adjust the pizza size slider. The console will output how many milliseconds the page is using to display data.</p>
-        <p>The original un-optimized page will be close to in the range of 70-90 (or more) milliseconds per frame for scrolling, and somewhere over 400 miiliseconds to change pizza size.</p>
-        <p>The optimized site should display times of about 0.9 to 5 milliseconds for scrolling, and about 2 milliseconds for changing pizza size.</p>
+        <p>The links below will open an optimized or an un-optimized version of pizza website.</p>
         <p><a href="views/pizza.html" target="_blank">View optimized website</a></p>
-        <p><a href="views-original/pizza.html" target="_blank">View un-optimized website</a></p>
+        <p style="padding-bottom: 1em;"><a href="views-original/pizza.html" target="_blank">View un-optimized website</a></p>
+        <p>To comparing the performance of the websites, press the F12 key immediately after the pizza site loads to bring up your browser's console. Be sure the Console tab in the console is selected, as opposed to Element or Network data.</p>
+        <p><img src="img/console.png"/></p>
+        <p>While the console is displayed, adjust the pizza size slider to small, medium and large. This slider uses javascript to resize many pizza images displayed on the page.</p>
+        <p><img src="img/pizza-size.png"/></p>
+        <p>The console will output how many milliseconds the page is using to display data.</p>
+        <p><img src="img/output.png"/></p>
+        <p>The original un-optimized page will be close to the range of 1.0 - 1.5 (or more) milliseconds per 10 frames while scrolling, and somewhere over 150 miiliseconds to change pizza size.</p>
+        <p>The optimized site should display times of about 0.3 to .6 milliseconds for scrolling, and about .4 milliseconds for changing pizza size.</p>
+        <p style="padding-bottom: 4em;">Speed was increased by optimizing loops and variables in the page's javascript. Other items optimized for performance were image sizes.</p>
     </article>
 
     <footer>
