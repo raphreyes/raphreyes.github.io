@@ -20,6 +20,11 @@ a {
     text-decoration: none;
 }
 
+h4 a.link {
+    color: #333333;
+    font-size: 18px;
+}
+
 .row {
     width: 100%;
     padding: 0;
@@ -146,7 +151,7 @@ h2.uppercase {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 h4 {
@@ -193,7 +198,7 @@ img {
 
 .portfolio-item,
 .portfolio-item img {
-    box-shadow: 2px 2px 6px 2px #aaa;
+    box-shadow: 1px 1px 2px 1px #aaa;
 }
 
 /* Footer */
