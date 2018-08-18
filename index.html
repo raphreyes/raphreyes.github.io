@@ -16,40 +16,49 @@
 
     <div id="main" class="container">
 
-        <header class="row padding-2em header-border padding-bottom-0 padding-top-0">
-            <!-- <div class="col-4 logo-box">
-                <img class="logo" src="img/r-logo.png" alt="website logo">
-            </div> -->
-            <div class="col-12 header-box text-align-center">
-                <h1 class="uppercase font-lato font-weight-300">Raphael Reyes</h1>
-                <h2>Portfolio and Projects</h2>
-                <h3>HTML | Javascript | Web Sites</h3>
-                <h4>
-                    <a class="link" href="mailto:raph@raphaelreyes.com">raph@raphaelreyes.com</a>
-                </h4>
+        <header class="row header-border text-align-center">
+            <div class="header-align">
+                <div class="col-6">
+                    <h1 class="uppercase font-lato font-weight-300 white">Raphael Reyes</h1>
+                </div>
+                <div class="col-6">
+                    <h2 class="white">Projects & Web Sites</h2>
+                    <h4>
+                        <a class="link" href="mailto:raph@raphaelreyes.com">raph@raphaelreyes.com</a>
+                    </h4>
+                </div>
             </div>
         </header>
 
-        <div id="banner" class="row">
-            <div class="col-12">
-                <!-- <img src="img/banner-sm.jpg" alt="banner image" height="200"> -->
+        <div id="project-list" class="row margin-center content">
+            <div class="portfolio-item padding-1em">
+                <a href="https://doorartgallery.com" target="_blank">
+                    <img src="img/doorartgallery.jpg" alt="client website">
+                    <h3 class="uppercase project-title font-grey">Door Art Gallery</h3>
+                    <p class="font-grey">
+                        Website to showcase artwork in a local gallery.
+                    </p>
+                </a>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 padding-left-2em">
-                <h2 class="uppercase">Projects</h2>
-            </div>
-        </div>
-
-        <div id="project-list" class="row padding-1em margin-center">
 
             <div class="portfolio-item padding-1em">
-                <img src="img/p1-portfolio.jpg" alt="portfoloio project">
-                <h3 class="uppercase project-title font-grey">Portfolio Page</h3>
-                <p>
-                    Build a Portfolio Page (This page!)<br><a href="portfolio_template_v1.0.0.zip">Download</a> the html/css to use for your site.
-                </p>
+                <a href="http://untamedfitandperformance.com" target="_blank">
+                    <img src="img/untamed.png" alt="client website">
+                    <h3 class="uppercase project-title font-grey">Untamed Fitness</h3>
+                    <p class="font-grey">
+                        Website built for a Youth Fitness Trainer for online registration to clinics.
+                    </p>
+                </a>
+            </div>
+
+            <div class="portfolio-item padding-1em">
+                <a href="http://myhonolulucondo.com" target="_blank">
+                    <img src="img/myhonolulucondo.jpg" alt="client website">
+                    <h3 class="uppercase project-title font-grey">My Honolulu Condo</h3>
+                    <p class="font-grey">
+                        Website for Real Estate Agent who required site to dynamically display his MLS listings.
+                    </p>
+                </a>
             </div>
 
             <div class="portfolio-item padding-1em">
@@ -57,7 +66,7 @@
                     <img src="img/resume.jpg" alt="Resume Project">
                     <h3 class="uppercase project-title font-grey">Resume project</h3>
                     <p>
-                        Build a web page that populates data using Javascript.
+                        Build a resume page that uses Javascript to populate the contents from JSON data.
                     </p>
                 </a>
             </div>
@@ -74,7 +83,7 @@
 
             <div class="portfolio-item padding-1em">
                 <a href="p4-website-optimization/index.html">
-                    <img src="img/contruction.png" alt="under construction">
+                    <img src="img/optimization.jpg" alt="under construction">
                     <h3 class="uppercase project-title font-grey">Website Optimization</h3>
                     <p>
                         Optimize a website suffering from jank so it renders at 60 frames per second.
@@ -97,48 +106,26 @@
                     <img src="img/tdd.jpg" alt="test driven development">
                     <h3 class="uppercase project-title font-grey">Test Driven Development</h3>
                     <p class="font-grey">
-                        Write tests to confirm a Feed Reader website is functioning properly.
+                        Write tests using Jasmine to confirm a Feed Reader website is functioning properly.
                     </p>
                 </a>
             </div>
 
             <div class="portfolio-item padding-1em">
-                    <a href="https://doorartgallery.com" target="_blank">
-                        <img src="img/doorartgallery.jpg" alt="client website">
-                        <h3 class="uppercase project-title font-grey">Door Art Gallery</h3>
-                        <p class="font-grey">
-                            Website to showcase artwork in a local gallery.
-                        </p>
-                    </a>
+                <img src="img/p1-portfolio.jpg" alt="portfoloio project">
+                <h3 class="uppercase project-title font-grey">Portfolio Page</h3>
+                <p>
+                    Build a Portfolio Page (This page!)<br><a href="portfolio_template_v1.0.0.zip">Download</a> the html/css to use for your site.
+                </p>
             </div>
 
-            <div class="portfolio-item padding-1em">
-                    <a href="http://untamedfitandperformance.com" target="_blank">
-                        <img src="img/untamed.png" alt="client website">
-                        <h3 class="uppercase project-title font-grey">Untamed Fitness</h3>
-                        <p class="font-grey">
-                            Website built for a Youth Fitness Trainer for online registration to clinics.
-                        </p>
-                    </a>
-            </div>
-
-            <div class="portfolio-item padding-1em">
-                    <a href="http://myhonolulucondo.com" target="_blank">
-                        <img src="img/myhonolulucondo.jpg" alt="client website">
-                        <h3 class="uppercase project-title font-grey">My Honolulu Condo</h3>
-                        <p class="font-grey">
-                            Website for Real Estate Agent who required site to dynamically display his MLS listings.
-                        </p>
-                    </a>
-            </div>
-
-        </div>
+        </div><!-- Close main content -->
 
         <footer id="footer" class="footer-background row">
             <div class="col-12">
-                <h4 class="uppercase contact">
-                    <a href="mailto:raph@raphaelreyes.com">Contact Me</a>
-                </h4>
+                <p class="uppercase contact text-align-center">
+                    <a class="white" href="mailto:raph@raphaelreyes.com">Contact Me</a>
+                </p>
             </div>
         </footer>
 

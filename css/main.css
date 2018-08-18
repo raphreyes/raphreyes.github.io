@@ -11,9 +11,8 @@
 /* Framework */
 
 body {
-    max-width: 1600px;
     margin: 0 auto;
-    background: #eee;
+    background: #ffffff;
 }
 
 a {
@@ -21,8 +20,43 @@ a {
 }
 
 h4 a.link {
-    color: #333333;
+    color: #dddddd;
     font-size: 18px;
+}
+
+header {
+    background-color: #00548B;
+    margin-bottom: 24px!important;
+}
+
+footer {
+    margin-top: 16px!important;
+}
+
+.header-align {
+    max-width: 1568px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.header-align .col-6 {
+    text-align: right;
+    padding: 0 16px;
+}
+
+.header-align .col-6:first-of-type {
+    text-align: left;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #ffffff;
 }
 
 .row {
@@ -137,13 +171,11 @@ h4 a.link {
 
 h1 {
     font-size: 48px;
-    color: #777;
 }
 
 h2 {
     font-size: 28px;
-    margin: 1em 0 0 0;
-    color: #aaa;
+    margin: 16px 0;
 }
 
 h2.uppercase {
@@ -156,6 +188,8 @@ h3 {
 
 h4 {
     font-size: 20px;
+    padding: 16px 0;
+    margin: 0;
 }
 
 h4 a {
@@ -170,7 +204,7 @@ h5 {
 /* Margins and Padding */
 
 .padding-1em {
-    padding: 1em;
+    padding: 16px;
 }
 
 .padding-2em {
@@ -204,7 +238,7 @@ img {
 /* Footer */
 
 .footer-background {
-    background-color: #021452;
+    background-color: #00548B;
     color: #ddd;
 }
 
@@ -224,29 +258,67 @@ img {
 }
 
 .contact {
-    padding: 1em 2em;
+    padding: 16px 24px;
 }
 
 .portfolio-item {
     background: #fff;
-    margin: 1em auto;
-    max-width: 30%;
-}
-
-.portfolio-item {
-    background: #fff;
-    margin: 1em auto;
+    margin: 24px auto;
     max-width: 30%;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1136px) {
     h3 {
         font-size: 24px;
     }
-}
 
+    .header-align {
+        display: block;
+    }
+
+    .header-align .col-6 {
+        text-align: center!important;
+    }
+
+    header .col-6 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 0.5em 0;
+    }
+
+    .logo-box,
+    .header-box {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .portfolio-item {
+        min-width: 480px;
+        background: #fff;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+}
+/* 
 @media screen and (max-width: 768px) {
 
     h1 {
@@ -272,7 +344,7 @@ img {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
 
     h1 {
         font-size: 36px;
@@ -297,11 +369,132 @@ img {
     }
 
     .portfolio-item {
-        min-width: 280px;
+        min-width: 320px;
         background: #fff;
     }
 
     .contact {
+        text-align: center;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+
+    .header-align {
+        display: block;
+    }
+
+    .header-align .col-6 {
+        text-align: center!important;
+    }
+
+    header .col-6 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 0.5em 0;
+    }
+
+    .logo-box,
+    .header-box {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .portfolio-item {
+        min-width: 480px;
+        background: #fff;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .header-align {
+        display: block;
+    }
+
+    .header-align .col-6 {
+        text-align: center!important;
+    }
+
+    header .col-6 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 0.5em 0;
+    }
+
+    .logo-box,
+    .header-box {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 480px;
+        min-width: 300px;
+        background: #fff;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 0.5em 0;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        min-width: 240px;
+        background: #fff;
+    }
+
+    p {
         text-align: center;
     }
 }

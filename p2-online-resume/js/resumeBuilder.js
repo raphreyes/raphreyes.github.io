@@ -64,25 +64,25 @@ var work = {
     }, {
         "name": "Ongoing Freelance Web Design",
         "title": "Web Designer",
-        "dates": "Jan 2018 - June 2018",
+        "dates": "2013 - Current",
         "location": "Fresno, CA",
-        "desc": "Create a real estate website for a client which involved integration to call home listing data from MLS database.<br/>" +
-            "Designed website for a personal trainer. Website needed photo gallery and video playback as well as online registration.<br/>" +
-            "Maintenance and content update for a long time client's website to update images and course information.<br/>" +
-            "Fix domain resolution issues for a small business referred to me."
+        "desc": "Most Recently: August 2018 Design website for a local Author to showcase their books and short stories.<br/>" +
+            "June 2018 Maintenance for a long-time client's website to update images and course information.<br/>" +
+            "May 2018 Designed website for a personal trainer. Website needed photo gallery and video playback as well as online registration.<br/>" +
+            "Feb 2018 Create a real estate website for a client which involved integration of home listing data from MLS database.<br/>"
     }, {
         "name": "Lucky Money, Inc.",
-        "title": "Web Design, Advertising",
+        "title": "Web Design, Online Advertising",
         "dates": "July 2012 - May 2015",
         "location": "San Francisco, CA",
-        "desc": "Maintain and create designs on multiple company websites using Photoshop, HTML, CSS and Javascript.<br/>" +
-            "Assist development of back-end (administrative) maintenance and design of same websites in Photoshop, HTML, CSS, and Javascript.<br/>" +
-            "Produce marketing materials and advertising using Photoshop.<br/>" +
+        "desc": "Maintain and create designs for companys' websites using Photoshop, HTML, CSS and Javascript.<br/>" +
+            "Assist development, maintenance and design of (administrative) back-end of same websites in Photoshop, HTML, CSS, and Javascript.<br/>" +
+            "Produce marketing materials and online advertising using Photoshop.<br/>" +
             "Create ads and Manage advertising campaigns in Google Adwords, Google Analytics, Yahoo, Bing, Yelp, Facebook.<br/>" +
-            "Train employees on new transaction platform with self made videos and remote training using Teamviewer and videocapture software."
+            "Train employees on new transaction platform with self-made videos and remote training using Teamviewer and videocapture software."
     }, {
         "name": "SiteBlasters",
-        "title": "Web Design, Business",
+        "title": "Web Design, Business Partnership",
         "dates": "July 2010 - Dec 2013",
         "location": "Modesto, CA",
         "desc": "Build websites for small local businesses in the Central Valley area.<br/>" +
@@ -92,8 +92,8 @@ var work = {
         "title": "Web Design, Product management",
         "dates": "July 2005 - Dec 2010",
         "location": "Modesto, CA",
-        "desc": "Use HTML, CSS, Javascript to implement design and prodcut updates Yahoo Shopping e-commerce platform.<br/>" +
-            "Maintain database of product listing with Access, SQL, and Excel.<br/>" +
+        "desc": "Use HTML, CSS to implement layout for Trilloras Yahoo Shopping e-commerce account.<br/>" +
+            "Maintain database of product listing using Access, SQL, and Excel.<br/>" +
             "Edit product images with Photoshop for placement on website." +
             "Manage product feeds for Google, Yahoo, and other shopping syndications."
     }, {
@@ -108,9 +108,8 @@ var work = {
         "title": "Web Design",
         "dates": "Oct 2002 - Feb 2004",
         "location": "Tokyo / Aizuwakamatsu, Japan",
-        "desc": "Improved my HTML and CSS skills through self-study and creating websites for myself and friends<br/>" +
-            "Study historical Japanese architecture/design from temples and castles.<br/>" +
-            ""
+        "desc": "Begin learning HTML and CSS through self-study and creating websites for myself and friends<br/>" +
+            "Study historical Japanese architecture/design from temples and castles.<br/>"
     }, {
         "name": "AndNow LLC",
         "title": "Art Director",
@@ -165,7 +164,7 @@ var projects = {
         "title": "Resume with JavaScript and JSON",
         "dates": "Nov 2015",
         "location": "",
-        "desc": "Build a resume page using Javascript and JSON.",
+        "desc": "Build a resume page that uses Javascript to populate the contents from JSON data.",
         "image": "/images/project2.jpg"
     }, {
         "name": "SalesForce Quickbooks to SAP Migration",
